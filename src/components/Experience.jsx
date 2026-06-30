@@ -9,8 +9,10 @@ export default function Experience() {
       period: "June 2023 - Present",
       bullets: [
         "Designed and deployed a production-grade autonomous AI voice agent using Vapi, ElevenLabs, and Salesforce to automate lead qualification.",
+        "Developed Observation Management and Fleet Management applications for Algihaz, automating workflows, notifications, and escalations. Built backend services for dynamic PDF generation and maintained self-hosted production infrastructure.",
         "Optimized the Orix IOM reimbursement solution by implementing lazy loading and resilient design patterns, reducing processing delays by 30%.",
         "Led technical training for Purplle on platform architecture and data sources, boosting development efficiency by 45%.",
+        "Built and optimized subscription forms and sign-up processes, making lead onboarding 50% faster.",
         "Developed 70+ tools and POCs for enterprise clients like Clevertap, executing robust error handling and debugging frameworks."
       ]
     },
@@ -21,7 +23,8 @@ export default function Experience() {
       period: "Sept 2022 - May 2023",
       bullets: [
         "Designed scalable REST APIs and web backends using Node.js, Express, and MongoDB.",
-        "Implemented secure JWT/OAuth2 authentication layers and structured exception handling mechanisms."
+        "Implemented secure JWT/OAuth2 authentication layers and structured exception handling mechanisms.",
+        "Worked with AWS S3 for secure file storage and data management."
       ]
     }
   ];
