@@ -10,7 +10,7 @@ export default function Hero() {
         Prachi Sharma
       </h1>
       <p className="text-xl md:text-2xl text-slate-400 max-w-4xl font-light leading-relaxed">
-  Backend Developer with <span className="text-slate-200 font-medium">2+ years of experience</span> in
+  Backend Developer with <span className="text-slate-200 font-medium">3+ years of experience</span> in
   <span className="text-slate-200 font-medium"> Node.js, Express, JavaScript, AWS</span>, and
   <span className="text-slate-200 font-medium"> multi-database systems</span>.
   Built scalable backend architectures, AI-driven workflows, and production-grade automations used by global enterprise clients.
