@@ -12,6 +12,7 @@ export default function Experience() {
         "Developed Observation Management and Fleet Management applications for Algihaz, automating workflows, notifications, and escalations. Built backend services for dynamic PDF generation and maintained self-hosted production infrastructure.",
         "Optimized the Orix IOM reimbursement solution by implementing lazy loading and resilient design patterns, reducing processing delays by 30%.",
         "Led technical training for Purplle on platform architecture and data sources, boosting development efficiency by 45%.",
+        "Engineered an automated workflow application for Cognota, seamlessly integrating HubSpot CRM and Slack APIs to execute real-time team alerts, pipeline tracking, and an automated ROI calculation engine via REST APIs and webhooks.",
         "Built and optimized subscription forms and sign-up processes, making lead onboarding 50% faster.",
         "Developed 70+ tools and POCs for enterprise clients like Clevertap, executing robust error handling and debugging frameworks."
       ]
