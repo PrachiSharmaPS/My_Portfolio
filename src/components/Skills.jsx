@@ -4,7 +4,7 @@ export default function Skills() {
   const categories = [
     {
       title: "AI & Automation",
-      skills: ["AI Agent Development", "Vapi", "Workflow Automation (n8n)", "ElevenLabs", "Prompt Engineering", "Conversational AI", "LLM Integrations", "Lovable"]
+      skills: ["Al Agent Development", "Workflow Automation", "n8n", "Vapi", "ElevenLabs", "Lovable", "Retool", "DronaHQ", "Prompt Engineering", "Conversational AI", "LLM Integrations", "Cursor", "Claude Code"]
     },
     {
       title: "Backend & Frontend",
@@ -12,7 +12,11 @@ export default function Skills() {
     },
     {
       title: "Database & Tools",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis","HubSpot", "AWS (EC2, S3)", "Docker", "Postman", "Git", "GitHub", "Claude Code","Cursor"]
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis","HubSpot", "AWS (EC2, S3)", "Docker"]
+    },
+    {
+      title: "Tools & Practices",
+      skills: ["Git", "GitHub", "Notion", "Postman"," Unit Testing", "Debugging", "Error Handling"]
     }
   ];
 
