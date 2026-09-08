@@ -55,7 +55,7 @@ export default function Navbar() {
           <div className="bg-slate-900 border-b border-slate-800 px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="font-mono text-xs text-slate-300 font-semibold tracking-wide">PRACHI_AI_AGENT // ONLINE</span>
+              <span className="font-mono text-xs text-slate-300 font-semibold tracking-wide">PRACHI_AI_AGENT // OFFLINE</span>
             </div>
             <button 
               onClick={() => setIsChatOpen(false)}
