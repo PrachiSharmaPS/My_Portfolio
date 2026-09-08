@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <span className="text-xl font-bold font-mono tracking-wider text-emerald-400">
-                PS // SDE
+                PS // CSE
               </span>
             </div>
             <div className="hidden md:block">
@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* Chat Iframe Container */}
           <div className="flex-grow w-full h-full bg-slate-900">
             <iframe 
-              src="https://agents.dronahq.com/chat/28cca669-8250-4bed-af6a-6eae92d73095" 
+              src="https://agents.com/chat/28cca669-8250-4bed-af6a-6eae92d73095" 
               className="w-full h-full border-none"
               title="Prachi's AI Agent"
               allow="clipboard-write"
