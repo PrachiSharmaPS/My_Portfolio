@@ -3,7 +3,7 @@ import React from 'react';
 export default function Experience() {
   const jobs = [
     {
-      role: "Low Code Developer",
+      role: "Software Developer",
       company: "DronaHQ",
       location: "Mumbai",
       period: "June 2023 - Present",
