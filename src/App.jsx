@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
 import { PageEffects } from './components/effects';
+import { FunLayer, CursorRing, ThemeSwitcher, EasterEgg } from './components/fun';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
         <section id="certificates"><Certificates /></section>
       </main>
       <Footer />
+      <ThemeSwitcher />
+      <EasterEgg />
+      <FunLayer />
+      <CursorRing />
     </div>
   );
 }

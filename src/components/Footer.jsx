@@ -1,5 +1,6 @@
 import React from 'react';
 import { Reveal } from './effects';
+import { Magnetic, fireConfetti } from './fun';
 
 const links = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/prachi-sharma-01ps/' },
@@ -19,12 +20,15 @@ export default function Footer() {
             <p className="text-slate-400 mt-4 max-w-xl mx-auto">
               Open to new opportunities and collaborations. Drop a message — I usually reply within a day.
             </p>
+            <Magnetic className="mt-8">
             <a
               href="mailto:Prachisharma.ps01@gmail.com"
-              className="btn-shine inline-block mt-8 px-8 py-4 rounded-xl font-semibold text-slate-950 bg-gradient-to-r from-emerald-400 to-cyan-400 shadow-[0_10px_40px_-10px_rgba(16,185,129,0.8)] hover:-translate-y-1 hover:shadow-[0_20px_50px_-10px_rgba(34,211,238,0.9)] transition-all duration-300"
+              onClick={(e) => fireConfetti(e.clientX, e.clientY)}
+              className="btn-shine group inline-block px-8 py-4 rounded-xl font-semibold text-slate-950 bg-gradient-to-r from-emerald-400 to-cyan-400 shadow-[0_10px_40px_-10px_rgb(var(--p500)/0.8)] hover:-translate-y-1 hover:shadow-[0_20px_50px_-10px_rgb(var(--s400)/0.9)] transition-all duration-300"
             >
-              Say Hello 👋
+              Say Hello <span className="inline-block group-hover:animate-[wave_1s_ease-in-out_infinite]">👋</span>
             </a>
+            </Magnetic>
           </div>
         </Reveal>
 

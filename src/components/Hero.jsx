@@ -1,5 +1,14 @@
 import React from 'react';
 import { Reveal, Typewriter, Counter } from './effects';
+import { BouncyText, Magnetic, SpinBadge } from './fun';
+
+const floaters = [
+  { emoji: '🚀', pos: 'top-16 left-[6%]', delay: '0s' },
+  { emoji: '⚡', pos: 'top-1/3 right-[8%]', delay: '1.2s' },
+  { emoji: '🤖', pos: 'bottom-1/4 left-[10%]', delay: '2.4s' },
+  { emoji: '☕', pos: 'bottom-[18%] right-[14%]', delay: '0.8s' },
+  { emoji: '💡', pos: 'top-[45%] left-[2%]', delay: '3s' },
+];
 
 const roles = ['Backend Developer', 'AI Agent Engineer', 'Automation Engineer', 'Node.js Specialist'];
 
@@ -13,10 +22,20 @@ const stats = [
 export default function Hero() {
   return (
     <div className="relative flex flex-col items-center text-center justify-center min-h-[calc(100vh-5rem)] py-16">
-      {/* Floating decorative orbs */}
-      <div className="absolute top-16 left-[8%] w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_25px_8px_rgba(16,185,129,0.5)] animate-float" />
-      <div className="absolute top-1/3 right-[10%] w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_20px_6px_rgba(34,211,238,0.5)] animate-float" style={{ animationDelay: '1.5s' }} />
-      <div className="absolute bottom-1/4 left-[15%] w-2.5 h-2.5 rounded-full bg-violet-400 shadow-[0_0_20px_6px_rgba(167,139,250,0.5)] animate-float" style={{ animationDelay: '3s' }} />
+      {/* Floating emojis — hover to spin, click for a burst */}
+      {floaters.map((f) => (
+        <span
+          key={f.emoji}
+          className={`absolute ${f.pos} hidden sm:block text-3xl md:text-4xl animate-float select-none`}
+          style={{ animationDelay: f.delay }}
+        >
+          <span className="block cursor-pointer opacity-80 hover:opacity-100 hover:scale-150 hover:rotate-[360deg] transition-all duration-700 drop-shadow-[0_0_18px_rgb(var(--p400)/0.6)]">
+            {f.emoji}
+          </span>
+        </span>
+      ))}
+
+      <SpinBadge className="hidden lg:block absolute top-6 right-0" />
 
       <div className="space-y-7 relative">
         <Reveal delay={0}>
@@ -27,9 +46,9 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={120} variant="zoom">
-          <p className="font-mono text-sm md:text-base text-slate-400 mb-3">Hi there 👋, I'm</p>
-          <h1 className="text-6xl md:text-8xl font-black tracking-tight leading-none text-gradient drop-shadow-[0_0_35px_rgba(16,185,129,0.25)]">
-            Prachi Sharma
+          <p className="font-mono text-sm md:text-base text-slate-400 mb-3">Hi there <span className="wave">👋</span>, I'm</p>
+          <h1 className="text-6xl md:text-8xl font-black tracking-tight leading-none drop-shadow-[0_0_35px_rgb(var(--p500)/0.25)]">
+            <BouncyText text="Prachi Sharma" />
           </h1>
         </Reveal>
 
@@ -58,19 +77,23 @@ export default function Hero() {
 
         <Reveal delay={560}>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
+            <Magnetic>
             <a
               href="#projects"
-              className="btn-shine group px-7 py-3.5 bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 font-semibold rounded-xl shadow-[0_10px_40px_-10px_rgba(16,185,129,0.8)] hover:shadow-[0_15px_50px_-10px_rgba(34,211,238,0.9)] hover:-translate-y-1 transition-all duration-300"
+              className="btn-shine group inline-block px-7 py-3.5 bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 font-semibold rounded-xl shadow-[0_10px_40px_-10px_rgb(var(--p500)/0.8)] hover:shadow-[0_15px_50px_-10px_rgb(var(--s400)/0.9)] hover:-translate-y-1 transition-all duration-300"
             >
               View My Work <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
             </a>
+            </Magnetic>
+            <Magnetic>
             <a
               href="/resume.pdf"
               download
-              className="group px-7 py-3.5 border border-slate-700 hover:border-emerald-400/60 bg-white/[0.02] hover:bg-emerald-500/10 text-slate-200 rounded-xl backdrop-blur hover:-translate-y-1 transition-all duration-300"
+              className="group inline-block px-7 py-3.5 border border-slate-700 hover:border-emerald-400/60 bg-white/[0.02] hover:bg-emerald-500/10 text-slate-200 rounded-xl backdrop-blur hover:-translate-y-1 transition-all duration-300"
             >
               Download Resume <span className="inline-block group-hover:translate-y-0.5 transition-transform">↓</span>
             </a>
+            </Magnetic>
           </div>
         </Reveal>
 

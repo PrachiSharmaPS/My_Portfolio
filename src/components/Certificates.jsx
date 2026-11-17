@@ -94,7 +94,7 @@ export default function Certificates() {
             >
               ✕
             </button>
-            <img src={open.img} alt={open.title} className="w-full max-h-[80vh] object-contain rounded-xl shadow-[0_30px_100px_-20px_rgba(16,185,129,0.5)]" />
+            <img src={open.img} alt={open.title} className="w-full max-h-[80vh] object-contain rounded-xl shadow-[0_30px_100px_-20px_rgb(var(--p500)/0.5)]" />
             <div className="text-center mt-4">
               <div className="font-bold text-slate-100">{open.title}</div>
               <div className="text-sm text-slate-400">{open.issuer} · {open.date}</div>

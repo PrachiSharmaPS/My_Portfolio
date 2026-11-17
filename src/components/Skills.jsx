@@ -5,25 +5,25 @@ const categories = [
   {
     title: "AI & Automation",
     icon: "🤖",
-    accent: "from-emerald-400 to-teal-400",
+    accent: "from-emerald-400 to-cyan-400",
     skills: ["Al Agent Development", "Workflow Automation", "n8n", "Vapi", "ElevenLabs", "Lovable", "Retool", "DronaHQ", "Prompt Engineering", "Conversational AI", "LLM Integrations", "Cursor", "Claude Code"]
   },
   {
     title: "Backend & Frontend",
     icon: "⚡",
-    accent: "from-cyan-400 to-sky-500",
+    accent: "from-cyan-400 to-violet-400",
     skills: ["Node.js", "Express.js", "JavaScript", "Python", "REST APIs", "React.js", "HTML", "CSS", "GSAP Animations", "OAuth2 / JWT"]
   },
   {
     title: "Database & Tools",
     icon: "🗄️",
-    accent: "from-violet-400 to-fuchsia-500",
+    accent: "from-violet-400 to-emerald-400",
     skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "HubSpot", "AWS (EC2, S3)", "Docker"]
   },
   {
     title: "Tools & Practices",
     icon: "🛠️",
-    accent: "from-amber-300 to-orange-500",
+    accent: "from-emerald-300 to-violet-500",
     skills: ["Git", "GitHub", "Notion", "Postman", "Unit Testing", "Debugging", "Error Handling"]
   }
 ];

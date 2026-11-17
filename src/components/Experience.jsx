@@ -62,7 +62,7 @@ export default function Experience() {
             <Reveal key={job.company} delay={idx * 150} variant="right" className="relative">
               {/* Timeline node */}
               <div className="absolute -left-8 md:-left-12 top-6 w-6 h-6 md:w-10 md:h-10 grid place-items-center">
-                <span className={`relative w-3.5 h-3.5 rounded-full bg-emerald-400 shadow-[0_0_14px_4px_rgba(16,185,129,0.55)] ${job.current ? 'ping-dot' : ''}`} />
+                <span className={`relative w-3.5 h-3.5 rounded-full bg-emerald-400 shadow-[0_0_14px_4px_rgb(var(--p500)/0.55)] ${job.current ? 'ping-dot' : ''}`} />
               </div>
 
               <TiltCard className="p-6 md:p-8" max={3}>
@@ -86,7 +86,7 @@ export default function Experience() {
                 <ul className="space-y-3 mt-5">
                   {job.bullets.map((bullet, bIdx) => (
                     <li key={bIdx} className="group flex gap-3 leading-relaxed text-slate-400 hover:text-slate-200 transition-colors">
-                      <span className="mt-2 w-1.5 h-1.5 shrink-0 rounded-full bg-emerald-500/60 group-hover:bg-emerald-400 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(16,185,129,0.8)] transition-all" />
+                      <span className="mt-2 w-1.5 h-1.5 shrink-0 rounded-full bg-emerald-500/60 group-hover:bg-emerald-400 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgb(var(--p500)/0.8)] transition-all" />
                       <span>{highlight(bullet)}</span>
                     </li>
                   ))}

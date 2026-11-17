@@ -57,7 +57,7 @@ export default function Testimonials() {
                   onClick={() => setActiveTab(index)}
                   className={`relative w-full text-left p-4 rounded-2xl border overflow-hidden transition-all duration-300 ${
                     isActive
-                      ? 'bg-emerald-500/10 border-emerald-500/60 text-slate-100 shadow-[0_0_30px_-5px_rgba(16,185,129,0.35)] translate-x-2'
+                      ? 'bg-emerald-500/10 border-emerald-500/60 text-slate-100 shadow-[0_0_30px_-5px_rgb(var(--p500)/0.35)] translate-x-2'
                       : 'bg-slate-900/50 border-slate-800 text-slate-400 hover:bg-slate-800/60 hover:border-slate-700 hover:translate-x-1'
                   }`}
                 >
@@ -94,7 +94,7 @@ export default function Testimonials() {
         </div>
 
         <Reveal delay={200} variant="right" className="lg:col-span-3">
-          <div className="conic-border shadow-[0_30px_80px_-30px_rgba(16,185,129,0.5)]">
+          <div className="conic-border shadow-[0_30px_80px_-30px_rgb(var(--p500)/0.5)]">
             <div className="bg-slate-950 p-4 rounded-2xl flex flex-col">
               <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
                 <span className="flex gap-1.5">

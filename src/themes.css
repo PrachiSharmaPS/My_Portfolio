@@ -1,0 +1,43 @@
+/* Colour themes. Values are "R G B" so Tailwind opacity modifiers work.
+   p = primary, s = secondary, t = tertiary, bg = page background. */
+
+/* Sunset Pop (default) */
+:root,
+[data-theme="sunset"] {
+  --p300: 249 168 212; --p400: 244 114 182; --p500: 236 72 153;  --p600: 219 39 119;
+  --s300: 253 186 116; --s400: 251 146 60;  --s500: 249 115 22;
+  --t400: 253 224 71;  --t500: 250 204 21;  --t600: 234 179 8;
+  --bg: 18 7 22;
+}
+
+/* Matrix Mint (the original look) */
+[data-theme="mint"] {
+  --p300: 110 231 183; --p400: 52 211 153;  --p500: 16 185 129;  --p600: 5 150 105;
+  --s300: 103 232 249; --s400: 34 211 238;  --s500: 6 182 212;
+  --t400: 167 139 250; --t500: 139 92 246;  --t600: 124 58 237;
+  --bg: 6 11 24;
+}
+
+/* Cyber Neon */
+[data-theme="cyber"] {
+  --p300: 240 171 252; --p400: 232 121 249; --p500: 217 70 239;  --p600: 192 38 211;
+  --s300: 254 240 138; --s400: 253 224 71;  --s500: 250 204 21;
+  --t400: 34 211 238;  --t500: 6 182 212;   --t600: 8 145 178;
+  --bg: 10 4 20;
+}
+
+/* Ocean Deep */
+[data-theme="ocean"] {
+  --p300: 125 211 252; --p400: 56 189 248;  --p500: 14 165 233;  --p600: 2 132 199;
+  --s300: 165 180 252; --s400: 129 140 248; --s500: 99 102 241;
+  --t400: 45 212 191;  --t500: 20 184 166;  --t600: 13 148 136;
+  --bg: 3 12 28;
+}
+
+/* Smooth colour change when switching themes */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.6s ease, border-color 0.6s ease, color 0.6s ease, box-shadow 0.6s ease, fill 0.6s ease !important;
+}

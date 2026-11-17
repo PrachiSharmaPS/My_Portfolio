@@ -174,14 +174,14 @@ export function PageEffects() {
       {/* Scroll progress */}
       <div className="fixed top-0 left-0 right-0 h-[3px] z-[60] pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500 shadow-[0_0_12px_rgba(34,211,238,0.7)]"
+          className="h-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500 shadow-[0_0_12px_rgb(var(--s400)/0.7)]"
           style={{ width: `${progress}%` }}
         />
       </div>
 
       {/* Background layers */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden="true">
-        <div className="absolute inset-0 bg-[#060b18]" />
+        <div className="absolute inset-0 bg-[rgb(var(--bg))]" />
         <div className="blob blob-1" />
         <div className="blob blob-2" />
         <div className="blob blob-3" />

@@ -6,7 +6,7 @@ const projects = [
     title: "AWS S3 File Explorer",
     date: "Feb 2025",
     icon: "☁️",
-    gradient: "from-amber-400/30 via-orange-500/10 to-transparent",
+    gradient: "from-emerald-400/30 via-cyan-500/10 to-transparent",
     tech: ["JavaScript", "AWS S3", "AWS Athena"],
     desc: "Engineered a comprehensive file manager to view, upload, and download S3 objects. Integrated AWS Athena for high-speed querying and parsing of raw JSON-based integrations, optimizing data retrieval performance."
   },
@@ -14,7 +14,7 @@ const projects = [
     title: "LinkSlice",
     date: "Feb 2023",
     icon: "🔗",
-    gradient: "from-cyan-400/30 via-violet-500/10 to-transparent",
+    gradient: "from-violet-400/30 via-emerald-500/10 to-transparent",
     tech: ["React.js", "Node.js", "MongoDB", "Redis"],
     desc: "Developed a secure URL shortener converting extensive links into concise, user-friendly URLs with seamless, low-latency redirection backed by Redis caching mechanisms."
   }
