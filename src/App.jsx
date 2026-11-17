@@ -7,12 +7,14 @@ import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
+import { PageEffects } from './components/effects';
 
 function App() {
   return (
-    <div className="bg-slate-900 text-slate-100 min-h-screen font-sans scroll-smooth">
+    <div className="relative text-slate-100 min-h-screen font-sans overflow-x-clip">
+      <PageEffects />
       <Navbar />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-32">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 space-y-36">
         <section id="hero"><Hero /></section>
         <section id="skills"><Skills /></section>
         <section id="experience"><Experience /></section>
